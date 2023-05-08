@@ -7,16 +7,22 @@ public:
 	void showNim();													//Deklarasi Method
 };
 
-void mahasiswa::showNim()	{										//implementasi method diluar class
+void mahasiswa::showNim() 										//implementasi method diluar class 
+{
 	cout << "No Induk = " << nim << endl;
 }
 
 int main()
 {
 	mahasiswa mhs{ 1 }; //object mhs
-	mhs.showNim(); // Member acces operator
+	mhs.showNim(); // Member Acces Operator
 
 	mahasiswa& ref = mhs; // Pointer Reference refMhs
+	ref.nim = 2; // Member Acces Operator
+	mhs.showNim();
+
+	
+
 
 }
 
