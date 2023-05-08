@@ -1,4 +1,4 @@
-#include <iosstream>
+#include <iostream>
 using namespace std;
 
 class mahasiswa {
@@ -24,7 +24,8 @@ int main()
 	mahasiswa* pMhs = &mhs;	//Pointer Dereference pMhs
 	pMhs->nim = 3; //Arrow Operator
 	mhs.showNim();
-	
+	system("pause");
+	return 0;
 
 }
 
